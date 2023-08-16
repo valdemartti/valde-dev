@@ -1,0 +1,44 @@
+"use client";
+
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuLink,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export function Navigation() {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <MenuItem href={"/"}>Home</MenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+
+export function MenuItem({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  const path = usePathname();
+
+  return (
+    <NavigationMenuItem>
+      <Link href={href} legacyBehavior passHref>
+        <NavigationMenuLink
+          active={path === href}
+          className={navigationMenuTriggerStyle()}
+        >
+          {children}
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+  );
+}
