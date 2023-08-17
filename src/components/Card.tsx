@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
+  GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
@@ -45,6 +46,13 @@ export function Card() {
               target="_blank"
             >
               <TwitterLogoIcon className="h-4 w-4" />
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "outline", size: "icon" })}
+              href="https://github.com/valdemartti"
+              target="_blank"
+            >
+              <GitHubLogoIcon className="h-4 w-4" />
             </Link>
             <Link
               className={buttonVariants({ variant: "outline", size: "icon" })}
