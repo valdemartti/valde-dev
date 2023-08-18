@@ -76,6 +76,9 @@ module.exports = {
         "18/5": "18 / 5",
         "18/9": "18 / 9",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

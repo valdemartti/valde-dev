@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navigation } from "@/components/Navigation";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={inter.className}>
+      <body className={cn(inter.className, "bg-black")}>
         <div className="max-w-3xl my-0 mx-auto p-2 sm:p-8">
           <main>
             <Card />

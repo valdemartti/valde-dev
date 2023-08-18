@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -10,13 +9,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { HoverSwitch } from "./ui/HoverSwitch";
+import { CoverImage } from "./CoverImage";
 
 export function Card() {
   return (
     <div>
-      <div className="aspect-18/9 sm:aspect-18/5 relative overflow-hidden rounded-xl">
-        <Image src="/unto-otso.jpg" layout="fill" objectFit="cover" alt="" />
-      </div>
+      <CoverImage />
       <div className="w-full z-20 relative">
         <div className="w-full h-32 -translate-y-1/2 -mb-12 relative flex items-center justify-center">
           <div className="w-32 h-32 bg-background rounded-full flex items-center justify-center overflow-hidden outline outline-background">
