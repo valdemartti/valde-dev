@@ -6,7 +6,7 @@ export function CoverImage() {
     <div className="aspect-18/9 sm:aspect-18/5 relative overflow-hidden rounded-xl transition-opacity duration-75 flex items-center justify-center">
       <Image
         src="/unto-otso.jpg"
-        className="object-cover"
+        className="object-cover w-full h-full"
         alt=""
         priority={true}
         width="704"
