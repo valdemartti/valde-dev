@@ -15,6 +15,7 @@ export function Navigation() {
     <NavigationMenu>
       <NavigationMenuList>
         <MenuItem href={"/"}>Home</MenuItem>
+        <MenuItem href={"/blog"}>Blog</MenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
