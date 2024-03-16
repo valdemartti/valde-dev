@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className={cn(inter.className, "bg-black")}>
         <div className="max-w-3xl my-0 mx-auto p-2 sm:p-8">
           <main>
-            <Card />
             <Navigation />
             <div className="text-sm px-4 py-4">{children}</div>
           </main>
