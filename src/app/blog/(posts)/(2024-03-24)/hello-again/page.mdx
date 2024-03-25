@@ -1,3 +1,5 @@
+import { Author } from "@/components/blog/Author";
+
 export const metadata = {
   title: "Hello again!",
   description:
@@ -5,4 +7,8 @@ export const metadata = {
   author: "Valtteri Palonkorpi",
 };
 
+# {metadata.title}
+
 Second post!
+
+<Author name={metadata.author} date="2024-03-24" />

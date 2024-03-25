@@ -3,7 +3,7 @@ import { remark } from "remark";
 import mdx from "remark-mdx";
 import { compileSync } from "@mdx-js/mdx";
 
-const BLOG_PATH = "./src/app/blog";
+const BLOG_PATH = "./src/app/blog/(posts)";
 
 /**
  * Collects all blog posts from the blog directory, including their metadata.

@@ -34,7 +34,7 @@ export function MenuItem({
     <NavigationMenuItem>
       <Link href={href} legacyBehavior passHref>
         <NavigationMenuLink
-          active={path === href}
+          active={href === "/" ? path === href : path.startsWith(href)}
           className={navigationMenuTriggerStyle()}
         >
           {children}

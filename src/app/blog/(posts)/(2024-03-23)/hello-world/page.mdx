@@ -1,7 +1,13 @@
+import { Author } from "@/components/blog/Author";
+
 export const metadata = {
   title: "Hello world!",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   author: "Valtteri Palonkorpi",
 };
 
+# {metadata.title}
+
 First post!
+
+<Author name={metadata.author} date="2024-03-23" />
