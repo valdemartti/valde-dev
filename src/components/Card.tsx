@@ -31,7 +31,7 @@ export function Card() {
           <CardTitle>Valtteri Palonkorpi</CardTitle>
           <HoverSwitch className="w-80 mx-auto">
             <CardDescription>
-              Software Engineer at Elisa Esports
+              Fullstack Developer at Reaktor
             </CardDescription>
             <CardDescription>
               Poodle dad with a love for creating things
