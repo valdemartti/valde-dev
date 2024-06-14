@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Valtteri Palonkorpi",
   description:
-    "Software Engineer and a Poodle dad with a love for creating things",
+    "Fullstack Developer and a Poodle dad with a love for creating things",
 };
 
 export default function RootLayout({
